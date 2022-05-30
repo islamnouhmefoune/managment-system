@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CE57EBC-1206-4471-BFA3-B2AECEF1E32D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>WindowsApplication1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="droit_propriter_etatDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>droit_propriter_etatDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="droit_propriter_etatDataSet.vb">
+      <DependentUpon>droit_propriter_etatDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Demande.Designer.vb">
+      <DependentUpon>Form-Demande.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form-Demande.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Abattment.Designer.vb">
+      <DependentUpon>Form_Abattment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Abattment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_arrete_cess.Designer.vb">
+      <DependentUpon>Form_arrete_cess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_arrete_cess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_commi_cess.Designer.vb">
+      <DependentUpon>Form_commi_cess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_commi_cess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Directeur.Designer.vb">
+      <DependentUpon>Form_Directeur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Directeur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_droit-pro-etat.Designer.vb">
+      <DependentUpon>Form_droit-pro-etat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_droit-pro-etat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_echenc_paie_initial.Designer.vb">
+      <DependentUpon>Form_echenc_paie_initial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_echenc_paie_initial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_attestation.Designer.vb">
+      <DependentUpon>Form_attestation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_attestation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_beneficiare.Designer.vb">
+      <DependentUpon>Form_beneficiare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_beneficiare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_certificate_engag_achat.Designer.vb">
+      <DependentUpon>Form_certificate_engag_achat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_certificate_engag_achat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_dashboard.Designer.vb">
+      <DependentUpon>form_dashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_echencer_verse.Designer.vb">
+      <DependentUpon>Form_echencer_verse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_echencer_verse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_gestionnier.Designer.vb">
+      <DependentUpon>Form_gestionnier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_gestionnier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_local.Designer.vb">
+      <DependentUpon>Form_local.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_local.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.vb">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Pv_commisio_cess.Designer.vb">
+      <DependentUpon>Form_Pv_commisio_cess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Pv_commisio_cess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Rapport_Evaluation.Designer.vb">
+      <DependentUpon>Form_Rapport_Evaluation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Rapport_Evaluation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_residance.Designer.vb">
+      <DependentUpon>Form_residance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_residance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_wilaya.Designer.vb">
+      <DependentUpon>Form_wilaya.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_wilaya.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module_Connection.vb" />
+    <Compile Include="Module_hash.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form-Demande.resx">
+      <DependentUpon>Form-Demande.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Abattment.resx">
+      <DependentUpon>Form_Abattment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_arrete_cess.resx">
+      <DependentUpon>Form_arrete_cess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_commi_cess.resx">
+      <DependentUpon>Form_commi_cess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Directeur.resx">
+      <DependentUpon>Form_Directeur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_droit-pro-etat.resx">
+      <DependentUpon>Form_droit-pro-etat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_echenc_paie_initial.resx">
+      <DependentUpon>Form_echenc_paie_initial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_attestation.resx">
+      <DependentUpon>Form_attestation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_beneficiare.resx">
+      <DependentUpon>Form_beneficiare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_certificate_engag_achat.resx">
+      <DependentUpon>Form_certificate_engag_achat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_dashboard.resx">
+      <DependentUpon>form_dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_echencer_verse.resx">
+      <DependentUpon>Form_echencer_verse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_gestionnier.resx">
+      <DependentUpon>Form_gestionnier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_local.resx">
+      <DependentUpon>Form_local.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Pv_commisio_cess.resx">
+      <DependentUpon>Form_Pv_commisio_cess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Rapport_Evaluation.resx">
+      <DependentUpon>Form_Rapport_Evaluation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_residance.resx">
+      <DependentUpon>Form_residance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_wilaya.resx">
+      <DependentUpon>Form_wilaya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="droit_propriter_etatDataSet.xsc">
+      <DependentUpon>droit_propriter_etatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="droit_propriter_etatDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>droit_propriter_etatDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="droit_propriter_etatDataSet.xss">
+      <DependentUpon>droit_propriter_etatDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_0846[1].JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
